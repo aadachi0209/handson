@@ -1,2 +1,3 @@
 create by adachi test2.txt
 update by adachi test2.txt
+local update by adachi text2.txt
