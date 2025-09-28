@@ -73,11 +73,14 @@ WSGI_APPLICATION = 'handson.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'handson_db',
+        'USER': 'root',
+        'PASSWORD': 'Tn63mfij!',
+        'HOST': 'localhost',
+        'PORT': '13306',
     }
 }
 
