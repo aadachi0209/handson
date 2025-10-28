@@ -17,4 +17,21 @@ class PostCreateView(generic.CreateView): # 追加
     success_url = reverse_lazy('handson_app:post_list')
     template_name = 'handson_app/post_create.html'
 
+class PostDetailView(generic.DetailView): # 追加
+    model = Post
+    template_name = 'handson_app/post_detail.html'
 
+class PostDetailView(generic.DetailView): # 追加
+    model = Post
+    template_name = 'handson_app/post_detail.html'
+
+class PostUpdateView(generic.UpdateView): # 追加
+    model = Post
+    form_class = PostCreateForm 
+    success_url = reverse_lazy('handson_app:post_list')
+    template_name = 'handson_app/post_create.html'
+
+class PostDeleteView(generic.DeleteView): # 追加
+    model = Post
+    success_url = reverse_lazy('handson_app:post_list')
+    template_name = 'handson_app/post_confirm_delete.html'
