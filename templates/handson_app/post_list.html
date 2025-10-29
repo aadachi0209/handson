@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a href="{% url 'handson_app:logout' %}">ログアウト</a>
+ {% if request.user.is_superuser %}
+ <a href="{% url 'handson_app:signup' %}">ユーザ登録</a>
+ {% endif %}
 <table class="table">
   <thead>
     <tr>

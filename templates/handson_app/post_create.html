@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a href="{% url 'handson_app:logout' %}">ログアウト</a>
 <p>{{ post.title }}</p>
 <!-- actionにはサーバのどのURLに対して情報を送信する -->
 <!-- actionを空欄にすると現在開いている URL = /handson_app/post_create に値を返すので、views.py の PostCreateView が再度呼び出されることになる -->

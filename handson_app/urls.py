@@ -10,4 +10,7 @@ urlpatterns = [
     path('post_detail/<int:pk>/', views.PostDetailView.as_view(), name='post_detail'),
     path('post_update/<int:pk>/', views.PostUpdateView.as_view(), name='post_update'), 
     path('post_delete/<int:pk>/', views.PostDeleteView.as_view(), name='post_delete'),
+    path('login/', views.PostLoginView.as_view(), name='login'),
+    path('logout/', views.PostLogoutView.as_view(), name='logout'),
+    path('signup/', views.SignUpView.as_view(), name="signup"),
 ]
