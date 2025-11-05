@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'handson_app.apps.HandsonAppConfig',
+    'fortune.apps.FortuneConfig',
 ]
 
 MIDDLEWARE = [
